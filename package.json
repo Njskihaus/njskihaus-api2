@@ -1,0 +1,22 @@
+{
+  "name": "njskihaus-api",
+  "version": "1.0.0",
+  "description": "NJ Ski Haus — daily mountain conditions scraper & API",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "scrape": "node lib/run-scrape.js",
+    "test-scrapers": "node lib/test-scrapers.js"
+  },
+  "dependencies": {
+    "@vercel/kv": "^2.0.0",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
