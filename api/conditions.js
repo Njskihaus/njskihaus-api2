@@ -57,7 +57,7 @@ module.exports = async function handler(req, res) {
     }
 
     // Cache: tell browsers/CDN to cache for 1 hour, serve stale for up to 2hr while revalidating
-    res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=7200');
+    res.setHeader('Cache-Control', 'no-store');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Content-Type', 'application/json');
 
